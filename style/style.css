@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*general*/
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+button, button:hover, button:focus, button:active, button:visited{
+    outline: 0 none !important;
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    font-family:sans-serif;
+    color: #111;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    margin: 30px 0px;
+    padding: 0 30px;
+}
+
+h3, h4, h5{
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.h3-bold{
+    text-align: start;
+    margin: 5px 20px;
+    font-weight: 600;
+    position: absolute;
+    top:0px;
+    font-size: 20px;
+}
+
+.h3-light{
+    text-align: start; 
+    margin: 5px 20px;
+    color: #333;
+    position: absolute;
+    bottom: 0px;
+    font-size: 18px;
+}
+
+.font-22{
+    font-size: 22px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-30{
+    font-size: 30px;
+}
+
+.grey-text{
+    color: #444;
+}
+
+section{
+    margin-top: 50px;
+    padding: 50px 0px;
+
+}
+
+.main-container{
+    display: flex;
+    width: 1200px; 
+    margin: auto;
+    
+}
+
+.flex{
+    display:flex;
+    justify-content: space-around;
+}
+
+.half-block{
+    width: 50%;
+    padding: 20px;
+}
+
+.second-color{
+    background-color: #f4dcd6;
+}
+
+
+/*header*/
+
+header{
+    height: 80px;
+    align-items: center;
+    background-color: #FFF;
+    width: 100%;
+    height: 80px;
+
+}   
+
+.head-flex{
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.header-flex{
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.head-stick{
+    background-color: #FFF;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top:0px;
+    z-index: 999;
+    box-shadow: 0em 0.4em 5px rgba(122,122,122,0.1);
+}
+
+.phone{
+    background-image: url(img/telephone-handle-silhouette.png);
+    width: 30px;
+    height: 30px;
+    background-size: 28px;
+    background-repeat: no-repeat;
+    margin: 8px 5px 0px;
+}
+
+.phone-block{
+    position: relative;
+    z-index: 999;
+    display: flex; 
+    align-items: center;
+}
+
+.menu-text{
+    color: #111;
+    margin: 0px 45px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.menu-text::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #111;
+    color: #111;
+    position: absolute;
+    bottom:10px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.5s;
+    
+}
+
+.menu-text:hover::after{
+    width: 100%;
+}
+
+
+/*banner and about*/
+
+.banner-h1{
+    font-size: 60px;
+}
+
+.portrait{
+    background-color: #AAA;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/1663667529_23-mykaleidoscope-ru-p-zloi-bukhgalter-instagram-31.jpg);
+}
+
+.back-photo{
+    background-image: url(img/Laptop_01.jpg);
+    background-size: cover;
+    filter: brightness(40%);
+    width: 100%;
+    background-color: #AAA;
+    height: 600px;
+    align-items: center;
+}
+
+.dark-banner{
+    margin-top: 0px; 
+    padding: 0px; 
+    position: relative;
+}
+
+.front-banner-container{
+    position: absolute; 
+    top: 0px; 
+    width: 100%; 
+    height: 600px;
+}
+
+
+/*advantage*/
+
+.advantage{
+    font-size: 20px;
+    font-weight: 600;
+}
+.advantage-block{
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    justify-content: flex-start;
+    height: 100px;
+    padding: 10px;
+    align-items: center;
+}
+
+.advantage-text{
+    margin: 0px 8px;
+    width: 100%;
+    position: relative;
+}
+
+.number{
+    padding: 5px 0px 5px 1px;
+    min-width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 90px;
+    border-width: 1px;
+    border-color: red;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.number-in{
+    margin: 0px auto; 
+    align-items: center; 
+    width: 18px;
+    color: red;
+}
+
+
+/*services*/
+
+.services{
+    position:relative;
+    width: 220px;
+    margin: 50px 20px;
+    text-align: center;
+    color:#333;
+}
+
+.services-block{
+    margin-bottom: 100px;
+}
+
+.services-section{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.basic-img{
+    background-size: 50px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.services p{
+    font-size: 18px;
+}
+
+
+/*rate*/
+
+.rate{
+    width: 250px;
+    height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c7998c;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    margin: 30px auto;
+}
+
+.rate-section{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.price{
+    font-weight: 900;
+    position: absolute;
+    bottom: 80px;
+}
+
+.rate-title{
+    height: 60px;
+}
+
+.cross, .check{
+    width: 60px; margin: 10px 0px 10px 10px;
+}
+
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #1f1f1f;
+    color:#fff;
+}
+
+
+/*buttons*/
+
+.instagram-button{
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+    color:#fff;
+    transition: 0.2s;
+}
+
+.instagram-button:hover{
+    color:#AAA;
+}
+
+.whatsapp-button{
+    width: 210px;
+    height: 60px;
+    background-color: #966556;
+    color:#fff;
+    padding: 22px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.whatsapp-button:hover{
+    background-color: #94746a;
+}
+
+.nav{
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav hr{
+    position: absolute;
+    color: #fff;
+    width: 40px;
+    border: 2px solid #6d6d6d ;
+    transition: 0.2s;
+    top:calc(50% - 8px);
+  } 
+  
+  #hr1{
+    transform: translateY(10px);
+  }
+  #hr3{
+    transform: translateY(-10px);
+  }
+  
+  .close-btn{
+    #hr1{
+      transform: rotate(45deg);
+    }
+    #hr2{
+      transform: translateX(-100px);
+      border-color: rgba(0, 0, 0, 0.00);
+    }
+    #hr3{
+      transform:rotate(-45deg);
+    }
+  }
+
+@media(max-width: 1300px){
+    .main-container{
+        display: block;
+        width: 600px;
+        margin: auto;
+    }
+    .half-block{
+        width: 100%;
+        padding: 20px;
+    }
+    .flex{
+        display: block;
+        margin: auto;
+    }
+    .flex div{
+        margin: 20px auto;
+    }
+    .rate{
+        width: 350px;
+    }
+    .whatsapp-button{
+        left: 70px;
+    }
+    .price{
+        bottom: 100px
+    }
+    .front-banner-container{
+        width: 100%;
+        top:122px
+    }
+}
+
+@media(max-width: 950px){
+    .head-flex{
+        background-color: #FFF;
+        display: block;
+        height: 100vh;
+        padding: 0 20px;
+    }
+    .head-stick{
+        transition: .3s;
+        height: 50px;
+        overflow: hidden;
+    }
+    .nav{
+        display: block;
+    }
+}
